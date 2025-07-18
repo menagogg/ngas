@@ -7,7 +7,7 @@ const supabase = createClient(
 );
 
 const guildId = '1395463783215796224'; // <- ID twojego serwera
-const botToken = process.envMTM5NTQ2NDY2MjcyNzc4NjU5Nw.GsxDRY.5lI_EXodVlAVfF8Hg7GGIflVOvi2RGxxRakBTo; // <- Dodaj do .env lub wpisz ręcznie (jeśli testujesz)
+const botToken = process.envMTM5NTQ2NDY2MjcyNzc4NjU5Nw.GeHH1h.3LmhdSpqWvZnexfAPfyiVdw3RqfVPlKThlbrag; // <- Dodaj do .env lub wpisz ręcznie (jeśli testujesz)
 
 export default async function handler(req, res) {
   const code = req.query.code;
@@ -41,7 +41,7 @@ export default async function handler(req, res) {
 
     // 3. Pobranie ról użytkownika z serwera
     const memberRes = await fetch(`https://discord.com/api/guilds/${guildId}/members/${id}`, {
-      headers: { Authorization: `Bot ${MTM5NTQ2NDY2MjcyNzc4NjU5Nw.GsxDRY.5lI_EXodVlAVfF8Hg7GGIflVOvi2RGxxRakBTo}` }  // Użyj tokena BOTA
+      headers: { Authorization: `Bot ${MTM5NTQ2NDY2MjcyNzc4NjU5Nw.GeHH1h.3LmhdSpqWvZnexfAPfyiVdw3RqfVPlKThlbrag}` }  // Użyj tokena BOTA
     });
 
     if (!memberRes.ok) {
