@@ -1,4 +1,4 @@
 export default async function handler(req, res) {
-    res.status(200).json({ s: 'xertisolemoner' });
+    res.status(200).json({ s: 'menagog' });
   }
   
